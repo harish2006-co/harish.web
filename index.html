@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harish | Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
 
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-indigo-400 transition-colors">
+        Harish<span class="text-indigo-500">.</span>
+      </a>
+      <nav class="space-x-6 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12 space-y-24 flex-grow">
+
+    <!-- Hero Section -->
+    <section id="about" class="flex flex-col-reverse md:flex-row items-center justify-between gap-12 pt-8">
+      <div class="space-y-6 md:w-3/5 text-center md:text-left">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+          Open to Opportunities
+        </span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Harish</span>
+        </h1>
+        <p class="text-slate-400 text-lg leading-relaxed">
+          I build modern digital experiences, applications, and creative visual projects. Passionate about clean code, intuitive design, and scalable technology.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+          <a href="#projects" class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium shadow-lg shadow-indigo-500/25 transition-all">
+            View Projects
+          </a>
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-medium transition-all flex items-center gap-2">
+            <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="md:w-2/5 flex justify-center">
+        <div class="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-indigo-500/30 shadow-2xl">
+          <!-- Make sure profile.jpg is in the same folder -->
+          <img src="profile.jpg" alt="Harish" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80'">
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="space-y-8">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Featured Projects</h2>
+        <p class="text-slate-400 mt-1">A selection of recent projects and creative builds.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Project 1 -->
+        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <h3 class="text-xl font-semibold text-white">Personal Brand Platform</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              A responsive website built with modern CSS frameworks and optimized deployment workflows.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">HTML5</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">Tailwind CSS</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">GitHub Pages</span>
+            </div>
+          </div>
+          <div class="flex gap-4 pt-2">
+            <a href="#" class="text-sm text-indigo-400 hover:text-indigo-300 flex items-center gap-1">Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i></a>
+            <a href="#" class="text-sm text-slate-400 hover:text-slate-300 flex items-center gap-1">Source Code <i data-lucide="github" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <h3 class="text-xl font-semibold text-white">Creative Design Showcase</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              High-contrast vector compositions and aesthetic visual design projects organized in a modern gallery.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">Vector Art</span>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">UI/UX</span>
+            </div>
+          </div>
+          <div class="flex gap-4 pt-2">
+            <a href="#" class="text-sm text-indigo-400 hover:text-indigo-300 flex items-center gap-1">View Gallery <i data-lucide="external-link" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="space-y-8">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Skills & Toolkit</h2>
+        <p class="text-slate-400 mt-1">Technologies and creative tools I work with.</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 text-center">
+          <p class="font-semibold text-white">Frontend Dev</p>
+          <p class="text-xs text-slate-400 mt-1">HTML, CSS, JavaScript</p>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 text-center">
+          <p class="font-semibold text-white">Styling</p>
+          <p class="text-xs text-slate-400 mt-1">Tailwind CSS, Flexbox</p>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 text-center">
+          <p class="font-semibold text-white">Tools & Versioning</p>
+          <p class="text-xs text-slate-400 mt-1">Git, GitHub, VS Code</p>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 text-center">
+          <p class="font-semibold text-white">Creative Design</p>
+          <p class="text-xs text-slate-400 mt-1">Vector Illustration, UI</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="space-y-6 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-900/40 p-8 border border-slate-800 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white">Let's Connect</h2>
+      <p class="text-slate-400 max-w-md mx-auto">
+        Feel free to reach out for collaborations, project inquiries, or networking.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 pt-2">
+        <a href="mailto:your.email@example.com" class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium flex items-center gap-2 transition-all">
+          <i data-lucide="mail" class="w-4 h-4"></i> Send an Email
+        </a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-medium flex items-center gap-2 transition-all">
+          <i data-lucide="linkedin" class="w-4 h-4"></i> Connect on LinkedIn
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 py-6 text-center text-xs text-slate-500">
+    <p>© 2026 Harish. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
